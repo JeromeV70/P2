@@ -1,0 +1,232 @@
+@font-face
+{
+    font-family:"Raleway";
+    src: url("fonts/Raleway-VariableFont_wght.ttf");
+}
+
+*
+{
+    font-family: Raleway;
+}
+
+#hebergements,#activites, #populaires
+{
+    padding: 1em;
+    margin: 2em;
+}
+
+#populaires, #hebergements
+{
+    display:inline-block;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+}
+
+h2
+{
+    font-size: 1.5em;
+}
+
+#logoinfo
+{
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 1px solid gray;
+    margin-right: 0.5em;
+    display: inline-block;
+}
+
+#logoinfo img
+{
+    width: 0.25em;
+    padding-left: 0.38em;
+    padding-bottom: 0.15em;
+}
+
+#nbdispo
+{
+    display: inline-block;
+}
+
+footer a
+{
+    color:black;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1em;
+}
+
+footer
+{
+    background-color: #F2F2F2;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
+}
+
+.foot_colonne
+{
+    display: inline-block;
+    width: 15em;
+    margin-right: 13em;
+    margin-bottom: 2em;
+}
+
+footer h3
+{
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+#test
+{
+    border:1px solid black;
+    display:inline-block;
+}
+
+#local
+{
+    display: block;
+}
+
+#local img
+{
+    width: 1em;
+    padding: 0.5em;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#local input[type="button"]
+{
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+    width: 8em;
+    height: 3em;
+    border-radius: 0px 15px 15px 0px;
+    border: none;
+}
+
+#local input[type="text"]
+{
+    width: 10em;
+    height: 2em;
+    border: none;
+}
+
+#f1,#f2,#f3,#f4
+{
+    display: inline;
+    margin: 1em;
+    border: 1px solid #F2F2F2;
+    border-radius: 20px;
+    height: 15em;
+}
+
+#f1 img,#f2 img,#f3 img,#f4 img
+{
+    width: 1.4em;
+    height: 1.4em;
+    background-color: #DEEBFF;
+    border-radius: 50%;
+    padding: 1em;
+}
+
+#f1 input[type="button"], #f2 input[type="button"], #f3 input[type="button"], #f4 input[type="button"]
+{
+    border: none; 
+    height: 3em;
+    font-weight: bold;
+    font-size: 1em;
+    background-color: white;
+}
+
+#menu
+{
+    text-align: right;
+    margin-top: 2em;
+}
+
+#menu a
+{
+    margin-right: 2em;
+    text-decoration: none;
+    color: #0065FC;
+}
+
+.note img
+{
+    width: 1em;
+}
+
+.tarif,.note,.description
+{
+    padding-left: 1em;
+    padding-bottom: 0.4em;
+}
+
+
+.description
+{
+    font-weight: bolder;
+}
+
+.vignetteh
+{
+    width: 14.6em;
+    height: 13em;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0em 0em 1em lightgray;
+    margin: 1em;
+    display: inline-block;
+}
+
+.ivignetteh
+{
+    width: 14em;
+    height: 7em;
+    border-radius: 20px 20px 0px 0px;
+    padding: 0.3em;
+}
+
+.vignettep
+{
+    width: 20em;
+    height: 8em;
+    background-color: white;
+    border-radius: 20px;
+    margin: 1em;
+    display: inline-block;
+
+}
+
+.ivignettep
+{
+    width: 7em;
+    height: 7em;
+    border-radius: 20px 0px 0px 20px;
+    padding: 0.3em;
+}
+
+.vignettea
+{
+    width: 16em;
+    height: 15em;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0em 0em 1em lightgray;
+    margin: 1em;
+    display: inline-block;
+}
+
+.ivignettea
+{
+    width: 16em;
+    height: 12em;
+    border-radius: 20px 20px 0px 0px;
+    margin-bottom: 0.5em;
+}
+
