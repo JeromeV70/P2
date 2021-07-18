@@ -79,21 +79,15 @@ footer h3
     margin-bottom: 1em;
 }
 
-#test
-{
-    border:1px solid black;
-    display:inline-block;
-}
-
 #local
 {
-    display: block;
+    display: flex;
 }
 
 #local img
 {
-    width: 1em;
-    padding: 0.5em;
+    width: 0.7em;
+    padding: 1em;
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
 }
@@ -104,7 +98,7 @@ footer h3
     color: white;
     font-weight: bold;
     width: 8em;
-    height: 3em;
+    height: 3.6em;
     border-radius: 0px 15px 15px 0px;
     border: none;
 }
@@ -112,7 +106,7 @@ footer h3
 #local input[type="text"]
 {
     width: 10em;
-    height: 2em;
+    height: 3em;
     border: none;
 }
 
@@ -167,7 +161,6 @@ footer h3
     padding-bottom: 0.4em;
 }
 
-
 .description
 {
     font-weight: bolder;
@@ -195,12 +188,11 @@ footer h3
 .vignettep
 {
     width: 20em;
-    height: 8em;
+    height: 10em;
     background-color: white;
     border-radius: 20px;
     margin: 1em;
     display: inline-block;
-
 }
 
 .ivignettep
@@ -230,3 +222,7 @@ footer h3
     margin-bottom: 0.5em;
 }
 
+.vignettea .tarif,.vignettea .note,.vignettea .description
+{
+    display: block;
+}
