@@ -9,22 +9,41 @@
     font-family:Raleway;
 }
 
-#hebergements,#activites, #populaires
+#hebergements, #populaires
 {
     padding:1em;
     margin:2em;
-}
-
-#populaires, #hebergements
-{
     display:inline-block;
     background-color:#F2F2F2;
     border-radius:20px;
 }
 
+#activites
+{
+    padding:1em;
+    margin:1em;
+}
+
+.titre img
+{
+    width:1.4em;
+    border:1px solid red;
+    display:inline;
+    text-align:right;
+}
+
+.titre
+{
+    border:1px solid green;
+    display:flex;
+}
+
 h2
 {
-    font-size:1.5em;
+    font-size:1.2em;
+    padding-left:0.9em;
+    border:1px solid blue;
+    text-align:left;
 }
 
 #logoinfo
