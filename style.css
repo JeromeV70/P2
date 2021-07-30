@@ -12,10 +12,33 @@
 #hebergements, #populaires
 {
     padding:1em;
-    margin:2em;
+    margin-left:2em;
+    margin-bottom:2em;
     display:inline-block;
     background-color:#F2F2F2;
     border-radius:20px;
+}
+
+#hebergements
+{
+    max-width: 52em;
+}
+
+#hebergements h3
+{
+    margin-left:1em;
+}
+
+#populaires
+{
+    position:relative;
+    top:3em;
+    height:36.5em;
+}
+
+.bloc-tete
+{
+    margin-left:2em;
 }
 
 #activites
@@ -24,26 +47,24 @@
     margin:1em;
 }
 
-.titre img
+.bloc-titre
 {
-    width:1.4em;
-    border:1px solid red;
-    display:inline;
-    text-align:right;
+    display:flex;
+    height:4em;
+    justify-content:space-between;
 }
 
 .titre
 {
-    border:1px solid green;
-    display:flex;
+    font-size:1.2em;
+    margin-left:0.9em;
+    height:1.8em;
 }
 
-h2
+.titre-icone
 {
-    font-size:1.2em;
-    padding-left:0.9em;
-    border:1px solid blue;
-    text-align:left;
+    width:1.4em;
+    margin-right:0.9em;
 }
 
 #logoinfo
@@ -61,6 +82,11 @@ h2
     width:0.25em;
     padding-left:0.38em;
     padding-bottom:0.15em;
+}
+
+#disponible
+{
+    margin-top:2em;
 }
 
 #nbdispo
@@ -123,18 +149,20 @@ footer h3
 
 #local input[type="text"]
 {
-    width:10em;
+    width:15em;
     height:3em;
     border:none;
 }
 
 #f1,#f2,#f3,#f4
 {
-    display:inline;
+    display:inline-block;
     margin:1em;
-    border:1px solid #F2F2F2;
-    border-radius:20px;
-    height:15em;
+    border:3px solid #F2F2F2;
+    border-radius:400px;
+    height:3.25em;
+    position:relative;
+    top:1.5em;
 }
 
 #f1 img,#f2 img,#f3 img,#f4 img
@@ -153,6 +181,9 @@ footer h3
     font-weight:bold;
     font-size:1em;
     background-color:white;
+    position:relative;
+    bottom:1.4em;
+    margin-right:0.5em;
 }
 
 #menu
@@ -170,13 +201,20 @@ footer h3
 
 .note img
 {
-    width:1em;
+    width:0.85em;
 }
 
 .tarif,.note,.description
 {
     padding-left:1em;
     padding-bottom:0.4em;
+}
+
+.vignettep .tarif,.vignettep .note,.vignettep .description
+{
+    position:relative;
+    left:8em;
+    bottom:7em;
 }
 
 .description
@@ -186,8 +224,8 @@ footer h3
 
 .vignetteh
 {
-    width:14.6em;
-    height:13em;
+    width:15em;
+    height:12.5em;
     background-color:white;
     border-radius:20px;
     box-shadow:0em 0em 1em lightgray;
@@ -197,7 +235,7 @@ footer h3
 
 .ivignetteh
 {
-    width:14em;
+    width:14.3em;
     height:7em;
     border-radius:20px 20px 0px 0px;
     padding:0.3em;
@@ -205,26 +243,27 @@ footer h3
 
 .vignettep
 {
-    width:20em;
-    height:10em;
+    width:21.5em;
+    height:8.5em;
     background-color:white;
     border-radius:20px;
-    margin:1em;
-    display:inline-block;
+    margin-left:1em;
+    margin-right:1em;
+    margin-top:1.5em;
+    margin-bottom:1.5em;
 }
 
 .ivignettep
 {
     width:7em;
-    height:7em;
+    height:7.85em;
     border-radius:20px 0px 0px 20px;
     padding:0.3em;
 }
 
-.vignettea
+.vignettea1,.vignettea2,.vignettea3
 {
-    width:16em;
-    height:15em;
+    width: 19em;
     background-color:white;
     border-radius:20px;
     box-shadow:0em 0em 1em lightgray;
@@ -232,10 +271,44 @@ footer h3
     display:inline-block;
 }
 
-.ivignettea
+.vignettea1
 {
-    width:16em;
-    height:12em;
+    height:28em;
+}
+
+.vignettea2
+{
+    height:15em;
+}
+
+.vignettea3
+{
+    height:10em;
+}
+
+.ivignettea1
+{
+    height:24em;
+    width:19em;
+    object-fit:cover;
+    border-radius:20px 20px 0px 0px;
+    margin-bottom:0.5em;
+}
+
+.ivignettea2
+{
+    height:11em;
+    width:19em;
+    object-fit:cover;
+    border-radius:20px 20px 0px 0px;
+    margin-bottom:0.5em;
+}
+
+.ivignettea3
+{
+    height:7em;
+    width:19em;
+    object-fit:cover;
     border-radius:20px 20px 0px 0px;
     margin-bottom:0.5em;
 }
