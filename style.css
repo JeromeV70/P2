@@ -31,9 +31,10 @@
 
 #populaires
 {
-    position:relative;
-    top:3em;
     height:36.5em;
+    position:relative;
+    bottom:2em;
+    margin-top:2em;
 }
 
 .bloc-tete
@@ -130,8 +131,11 @@ footer h3
 
 #local img
 {
-    width:0.7em;
-    padding:1em;
+    width:0.85em;
+    padding-top:1em;
+    padding-bottom:1em;
+    padding-left:1.3em;
+    padding-right:1.3em;
     background-color:#F2F2F2;
     border-radius:15px 0px 0px 15px;
 }
@@ -141,17 +145,21 @@ footer h3
     background-color:#0065FC;
     color:white;
     font-weight:bold;
-    width:8em;
-    height:3.6em;
+    font-size:larger;
+    width:7em;
+    height:2.7em;
     border-radius:0px 15px 15px 0px;
     border:none;
 }
 
 #local input[type="text"]
 {
-    width:15em;
-    height:3em;
+    width:12em;
+    height:2.6em;
     border:none;
+    font-weight:bold;
+    font-size:larger;
+    padding-left:1em;
 }
 
 #f1,#f2,#f3,#f4
@@ -160,30 +168,34 @@ footer h3
     margin:1em;
     border:3px solid #F2F2F2;
     border-radius:400px;
-    height:3.25em;
+    height:3em;
     position:relative;
-    top:1.5em;
+    top:1.4em;
 }
 
 #f1 img,#f2 img,#f3 img,#f4 img
 {
-    width:1.4em;
-    height:1.4em;
+    width:1.2em;
+    height:1.2em;
     background-color:#DEEBFF;
     border-radius:50%;
     padding:1em;
 }
+#f1:hover,#f2:hover,#f3:hover,#f4:hover
+{
+    background-color: #0065FC;
+}
 
 #f1 input[type="button"], #f2 input[type="button"], #f3 input[type="button"], #f4 input[type="button"]
 {
-    border:none; 
-    height:3em;
+    border:none;
+    background-color:inherit; 
+    height:2.5em;
     font-weight:bold;
     font-size:1em;
-    background-color:white;
     position:relative;
-    bottom:1.4em;
-    margin-right:0.5em;
+    bottom: 1.4em;
+    margin-right:1em;
 }
 
 #menu
@@ -204,6 +216,11 @@ footer h3
     width:0.85em;
 }
 
+.description
+{
+    font-weight:bolder;
+}
+
 .tarif,.note,.description
 {
     padding-left:1em;
@@ -212,14 +229,13 @@ footer h3
 
 .vignettep .tarif,.vignettep .note,.vignettep .description
 {
-    position:relative;
-    left:8em;
-    bottom:7em;
+    margin-left:7.5em;
+    margin-right:3em;
 }
 
-.description
+.vignettep .note
 {
-    font-weight:bolder;
+    margin-top:1.3em;
 }
 
 .vignetteh
@@ -259,34 +275,85 @@ footer h3
     height:7.85em;
     border-radius:20px 0px 0px 20px;
     padding:0.3em;
+    float:left;
 }
 
-.vignettea1,.vignettea2,.vignettea3
+.grid-activite
+{
+    display:grid;
+    grid-template-columns: repeat(5,21em);
+    grid-template-rows: repeat(3,14em);
+    height:28em;
+}
+
+.vignettea1,.vignettea2,.vignettea3,.vignettea4,.vignettea5,.vignettea6
 {
     width: 19em;
     background-color:white;
     border-radius:20px;
     box-shadow:0em 0em 1em lightgray;
-    margin:1em;
-    display:inline-block;
+    display:block;
 }
 
 .vignettea1
 {
     height:28em;
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:3;
 }
 
 .vignettea2
 {
-    height:15em;
+    height:13em;
+    align-self:start;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:1;
+    grid-row-end:2;
 }
 
 .vignettea3
 {
-    height:10em;
+    height:12em;
+    align-self:end;
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:3;
 }
 
-.ivignettea1
+.vignettea4
+{
+    height:28em;
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start:1;
+    grid-row-end:3;
+}
+
+.vignettea5
+{
+    height:12em;
+    align-self:start;
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:2;
+}
+
+.vignettea6
+{
+    height:13em;
+    align-self:end;
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:2;
+    grid-row-end:3;
+}
+
+.ivignettea1,.ivignettea4
 {
     height:24em;
     width:19em;
@@ -295,18 +362,18 @@ footer h3
     margin-bottom:0.5em;
 }
 
-.ivignettea2
+.ivignettea2,.ivignettea6
 {
-    height:11em;
+    height:9em;
     width:19em;
     object-fit:cover;
     border-radius:20px 20px 0px 0px;
     margin-bottom:0.5em;
 }
 
-.ivignettea3
+.ivignettea3,.ivignettea5
 {
-    height:7em;
+    height:9em;
     width:19em;
     object-fit:cover;
     border-radius:20px 20px 0px 0px;
