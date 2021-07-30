@@ -13,7 +13,7 @@
 {
     padding:1em;
     margin-left:2em;
-    margin-bottom:2em;
+    margin-top:1em;
     display:inline-block;
     background-color:#F2F2F2;
     border-radius:20px;
@@ -34,12 +34,17 @@
     height:36.5em;
     position:relative;
     bottom:2em;
-    margin-top:2em;
 }
 
 .bloc-tete
 {
     margin-left:2em;
+}
+
+.bloc-tete p
+{
+    position:relative;
+    bottom:1em;
 }
 
 #activites
