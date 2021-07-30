@@ -75,8 +75,8 @@
 
 #logoinfo
 {
-    width:1em;
-    height:1em;
+    width:1.25em;
+    height:1.25em;
     border-radius:50%;
     border:1px solid gray;
     margin-right:0.5em;
@@ -85,14 +85,17 @@
 
 #logoinfo img
 {
-    width:0.25em;
-    padding-left:0.38em;
-    padding-bottom:0.15em;
+    width:0.28em;
+    padding-left:0.5em;
+    padding-top:0.2em;
+    margin-bottom:1em;
 }
 
 #disponible
 {
     margin-top:2em;
+    height: 1.5em;
+    margin-bottom:1em;
 }
 
 #nbdispo
