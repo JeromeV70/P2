@@ -26,11 +26,17 @@
     max-width: 51.52em;
 }
 
-#hebergements h3
+#hebergements h3 /* "afficher plus" */
 {
     margin-left:1em;
     margin-top:0em;
     padding-bottom:1.75em;
+}
+
+#activites
+{
+    margin-left:2em;
+    margin-top:2em;
 }
 
 .bloc-tete
@@ -38,17 +44,11 @@
     margin-left:2.5em;
 }
 
-h1
+h1 /* "Trouvez votre hébergement... */
 {
     font-size:1.25em;
     font-weight: bolder;
     line-height:0.25;
-}
-
-#activites
-{
-    margin-left:2em;
-    margin-top:2em;
 }
 
 .bloc-titre
@@ -58,31 +58,31 @@ h1
     justify-content:space-between;
 }
 
-.titre
+.titre /* Hébergement à, Les plus populaires, Activités à*/
 {
     font-size:1.2em;
     margin-left:0.9em;
     height:1.8em;
 }
 
-.titre-icone
+.titre-icone /* graph sur "les plus populaires" */
 {
     width:1.4em;
     margin-right:0.9em;
 }
 
-#disponible
+#disponible /* Résultat des logements disponibles */
 {
     margin-top:3.25em;
     height: 2em;
     margin-bottom:1em;
 }
 
-#disponible img
+#disponible img /* logo "i" */
 {
     padding:0.25em;
-    width:0.9em;
-    height:0.9em;
+    width:0.75em;
+    height:0.75em;
     border-radius:50%;
     border:1px solid gray;
     float:left;
@@ -94,35 +94,6 @@ h1
 #disponible p
 {
     display:inline;
-}
-
-footer a
-{
-    color:black;
-    text-decoration:none;
-    display:block;
-    margin-bottom:0.8em;
-}
-
-footer
-{
-    background-color:#F2F2F2;
-    padding:2em;
-}
-
-.foot_colonne
-{
-    display:inline-block;
-    width:15em;
-    margin-right:13em;
-    vertical-align:top;
-}
-
-footer h3
-{
-    font-size:1em;
-    margin-bottom:1.3em;
-    font-weight:bolder;
 }
 
 #local
@@ -242,39 +213,43 @@ footer h3
     left:3em;
 }
 
-.note img
+[class^="note"]
 {
-    width:0.85em;
+    width:5.5em;
+    height:0.7em;
+    background-position-x: 1em,1.9em,2.8em,3.7em,4.6em;
+    background-repeat:no-repeat;
 }
 
-.vignettep .note img
-{
-    width:0.8em;
-}
+.note1{background-image:url("icons/star-solid_b.svg"),url("icons/star-solid_g.svg"),url("icons/star-solid_g.svg"),url("icons/star-solid_g.svg"),url("icons/star-solid_g.svg");}
+.note2{background-image:url("icons/star-solid_b.svg"),url("icons/star-solid_b.svg"),url("icons/star-solid_g.svg"),url("icons/star-solid_g.svg"),url("icons/star-solid_g.svg");}
+.note3{background-image:url("icons/star-solid_b.svg"),url("icons/star-solid_b.svg"),url("icons/star-solid_b.svg"),url("icons/star-solid_g.svg"),url("icons/star-solid_g.svg");}
+.note4{background-image:url("icons/star-solid_b.svg"),url("icons/star-solid_b.svg"),url("icons/star-solid_b.svg"),url("icons/star-solid_b.svg"),url("icons/star-solid_g.svg");}
+.note5{background-image:url("icons/star-solid_b.svg"),url("icons/star-solid_b.svg"),url("icons/star-solid_b.svg"),url("icons/star-solid_b.svg"),url("icons/star-solid_b.svg");}
 
 .description
 {
     font-weight:bolder;
 }
 
-.tarif,.note,.description
+.tarif,.description
 {
     padding-left:1em;
     padding-bottom:0.4em;
 }
 
-.vignettep .tarif,.vignettep .note,.vignettep .description
+.vignette-populaire .tarif,.vignette-populaire,.vignette-populaire .description, .vignette-populaire [class^="note"]
 {
     margin-left:8.5em;
     margin-right:1.5em;
 }
 
-.vignettep .note
+.vignette-populaire [class^="note"]
 {
-    margin-top:1.25em;
+    margin-top:2em;
 }
 
-.vignetteh
+.vignette-hebergement
 {
     width:15.5em;
     height:12.4em;
@@ -287,7 +262,7 @@ footer h3
     display:inline-block;
 }
 
-.ivignetteh
+.image-vignette-hebergement
 {
     width:14.9em;
     height:7.1em;
@@ -296,7 +271,7 @@ footer h3
     object-fit:cover;
 }
 
-.vignettep
+.vignette-populaire
 {
     width:21.5em;
     height:9.1em;
@@ -307,7 +282,7 @@ footer h3
     margin-bottom:2em;
 }
 
-.ivignettep
+.image-vignette-populaire
 {
     width:8em;
     height:8.4em;
@@ -352,3 +327,32 @@ footer h3
 .vignette-activite:nth-child(4){height:27.8em;}
 .vignette-activite:nth-child(5){height:12.3em;}
 .vignette-activite:nth-child(6){height:12.8em;}
+
+footer a
+{
+    color:black;
+    text-decoration:none;
+    display:block;
+    margin-bottom:0.8em;
+}
+
+footer
+{
+    background-color:#F2F2F2;
+    padding:2em;
+}
+
+.foot_colonne
+{
+    display:inline-block;
+    width:15em;
+    margin-right:13em;
+    vertical-align:top;
+}
+
+footer h3
+{
+    font-size:1em;
+    margin-bottom:1.3em;
+    font-weight:bolder;
+}
