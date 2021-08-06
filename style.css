@@ -288,6 +288,12 @@ h1 /* "Trouvez votre hébergement... */
 #populaires .description,#activites .description /* espace au-dessus des noms des hébergements populaires et activités*/
 {
     padding-top:1em;
+    height:2.5em;
+}
+
+#populaires .description, #populaires .tarif
+{
+    padding-right:2em;
 }
 
 .description,.tarif
@@ -296,9 +302,10 @@ h1 /* "Trouvez votre hébergement... */
     padding-bottom:0.4em;
 }
 
-.vignette-populaire [class^="note"] /* déclage de la note vers la droite dans vignette populaire */
+.vignette-populaire [class^="note"] /* déclage de la note vers la droite et bas dans vignette populaire*/
 {
     margin-left:8.5em;
+    margin-top:2em;
 }
 
 .vignette-hebergement
