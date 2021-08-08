@@ -14,7 +14,7 @@ body
     margin:0em;
 }
 
-#bloc-milieu /* activites et populaires */
+main /* activites et populaires */
 {
     display:flex;
     flex-direction:row;
@@ -225,7 +225,7 @@ h1 /* "Trouvez votre hébergement... */
     margin-right:1em;
 }
 
-#menu
+nav
 {
     display:flex;
     flex-direction:row;
@@ -236,7 +236,7 @@ h1 /* "Trouvez votre hébergement... */
     margin-left:2em;
 }
 
-#menu a
+nav a
 {
     width:9em;
     padding-top:2em;
@@ -246,18 +246,18 @@ h1 /* "Trouvez votre hébergement... */
     border-top:3px solid transparent;
 }
 
-#menu a:nth-child(2),#menu a:nth-child(3) /* lien hébergement et activités dans le menu */
+nav a:nth-child(2),nav a:nth-child(3) /* lien hébergement et activités dans le menu */
 {
     color:black;
 }
 
-#menu a:nth-child(2):hover,#menu a:nth-child(3):hover /* effets au survol des liens dans le menu */
+nav a:nth-child(2):hover,nav a:nth-child(3):hover /* effets au survol des liens dans le menu */
 {
     border-color:#0065FC;
     color:#0065FC;
 }
 
-#menu img /* logo Reservia du menu */
+nav img /* logo Reservia du menu */
 {
     height:2.5em;
     padding-top:2em;
@@ -432,13 +432,13 @@ footer h3 /* titres des 3 colonnes du pied de page */
     #local{margin-top:2em;}
     #local input[type="text"]{width:10.75em;}
     h1{line-height:1.2;width:15em;}
-    #menu a:nth-child(4){order:2;margin-left:20em;text-align:right;}
-    #menu a:nth-child(2){order:3;border-bottom:3px solid #F2F2F2;border-top:transparent;flex-grow:1.25;}
-    #menu a:nth-child(3){order:4;border-bottom:3px solid #F2F2F2;border-top:transparent;flex-grow:1.25;}
-    #menu a:nth-child(4n+1):hover{border-bottom:3px solid #0065FC;}
+    nav a:nth-child(4){order:2;margin-left:20em;text-align:right;}
+    nav a:nth-child(2){order:3;border-bottom:3px solid #F2F2F2;border-top:transparent;flex-grow:1.25;}
+    nav a:nth-child(3){order:4;border-bottom:3px solid #F2F2F2;border-top:transparent;flex-grow:1.25;}
+    nav a:nth-child(4n+1):hover{border-bottom:3px solid #0065FC;}
     #hebergements{order:2;background-color:white;}/*boîte hebergement passe après la boîte populaire*/
-    #menu{height:8em;width:23.5em;margin-left:0em;margin-bottom:2em;justify-content:space-evenly;}
-    #menu img{flex-grow:1.25;left:1.5em;}
+    nav{height:8em;width:23.5em;margin-left:0em;margin-bottom:2em;justify-content:space-evenly;}
+    nav img{flex-grow:1.25;left:1.5em;}
     .bloc-tete{margin-left:1.5em;}
     #disponible{width:22em;}
     #titre-filtre{width:30em;height:1em;padding:0em;}
