@@ -1,0 +1,207 @@
+
+.bloc-activite
+{
+    height:70vw;
+}
+
+#hebergements,#populaires
+{
+    width:95%;
+    max-width:100%;
+    margin-left:0vw;
+    margin-right:0vw;
+    border-radius:0px;
+}
+
+.bloc-hebergement,.bloc-populaire
+{
+    justify-content:space-evenly;
+}
+
+.bloc-populaire
+{
+    flex-direction:row;column-gap:1vw;
+}
+
+.vignette-hebergement
+{
+    width:25.62vw;
+    height:20.5vw;
+    font-size:1.5vw;
+}
+
+.description, .tarif
+{
+    font-size:1.6vw;
+    height: 2vw;
+    margin-top:0.3vw;
+}
+
+[class^="note"]
+{
+    width:10vw;
+    height:01.4vw;
+    margin-top:0.3vw;
+    background-position-x: 1vw,2.5vw,4vw,5.5vw,7vw;
+}
+
+.image-vignette-hebergement
+{
+    width:25vw;
+    height:12vw;
+}
+
+.vignette-populaire
+{
+    width:30vw;
+    height:12vw;
+}
+
+.image-vignette-populaire
+{
+    width:11vw;
+    height:11.3vw;
+}
+
+.vignette-populaire [class^="note"]
+{
+    margin-left:11.5vw;
+}
+
+#populaires .description
+{
+    height:5.5vw;
+}
+
+.bloc-titre
+{
+    height:5.6vw;
+}
+
+.titre
+{
+    font-size:1.92vw;
+    height:2.88vw;
+}
+
+.vignette-activite
+{
+    width:45vw;
+}
+
+nav a
+{
+    width:14.4vw;
+    font-size:1.6vw;
+}
+
+.bloc-tete
+{
+    font-size: 1.6vw;
+}
+
+h1
+{
+    font-size: 2vw;
+}
+
+#afficher
+{
+    font-size:1.6vw;
+}
+
+.titre-icone
+{
+    width:2.24vw;
+    margin-right:1.44vw;
+}
+
+#disponible
+{
+    margin-top:3.2vw;
+    height:3.2vwm;
+    margin-bottom:1.6vw;
+    font-size:1.6vw;
+}
+
+#disponible img
+{
+    padding:0.4vw;
+    width:1.2vw;
+    height:1.2vw;
+    margin-right:0.8vw;
+    bottom:0.4vw;
+}
+
+#titre-filtre /* inscription "filtres" devant les filtres */
+{
+    height:4.4vw;
+    width:6.4vw;
+    padding-top:1.6vw;
+}
+
+#f1,#f2,#f3,#f4
+{
+    height:4.4vw;
+}
+
+#f1 img,#f2 img,#f3 img,#f4 img
+{
+    width:2.16vw;
+    height:2.16vw;
+    padding:1.2vw;
+}
+
+#f1 input[type="button"],#f2 input[type="button"],#f3 input[type="button"],#f4 input[type="button"]
+{
+    height:4vw;
+    font-size:1.6vw;
+    bottom:1.6vw;
+    margin-right:1.6vw;
+}
+
+#local img
+{
+    width:1.36vw;
+    padding-top:1.6vw;
+    padding-bottom:1.6vw;
+    padding-left:2.08vw;
+    padding-right:2.08vw;
+}
+
+#local input[type="text"]
+{
+    width:19.2vw;
+    height:4.8vw;
+    padding-left:1.6vw;
+}
+
+#search_large
+{
+    font-size:1.6vw;
+    width:11.2vw;
+    height:5.12vw;
+}
+
+footer
+{
+    padding:3.2vw;
+}
+
+.foot_colonne
+{
+    width:20vw;
+    margin-right:10vw;
+}
+
+footer a
+{
+    margin-bottom:1.28vw;
+    font-size:1.6vw;
+}
+
+footer h3
+{
+    font-size:1.6vw;
+    margin-bottom:2.08vw;
+}
