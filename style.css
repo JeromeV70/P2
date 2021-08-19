@@ -17,29 +17,46 @@ body
 
 nav /* menu de navigation "hébergements, activités, inscription" + logo site */
 {
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    max-width:95vw;
-    height:7vw;
-    justify-content:flex-end;
-    margin-left:2vw;
+    display:grid;
+    grid-template-columns:auto 11.5vw 8.5vw 7.5vw;
+    grid-template-rows:5vw;
+    margin-left:3.5vw;
+    margin-right:3.5vw;
 }
 
 nav a
 {
-    width:9vw;
-    padding-top:2vw;
     font-size:1vw;
+    width:100%;
+    height:min-content;
+    padding-top:2vw;
+    padding-bottom:1vw;
     text-align:center;
     text-decoration:none;
     color:#0065FC;
     border-top:3px solid transparent;
 }
 
-nav a:nth-child(2),nav a:nth-child(3) /* lien hébergement et activités dans le menu */
+nav a:nth-child(2) /* lien hébergements */
 {
+    grid-column:2/3;
+    grid-row:1/2;
     color:black;
+}
+
+nav a:nth-child(3) /* lien activités */
+{
+    grid-column:3/4;
+    grid-row:1/2;
+    color:black;
+}
+
+nav a:nth-child(4) /* lien inscription */
+{
+    grid-column:4/5;
+    grid-row:1/2;
+    color:#0065FC;
+    text-align:right;
 }
 
 nav a:nth-child(2):hover,nav a:nth-child(3):hover /* effets au survol des liens dans le menu */
@@ -50,10 +67,9 @@ nav a:nth-child(2):hover,nav a:nth-child(3):hover /* effets au survol des liens 
 
 nav img /* logo Reservia du menu */
 {
+    grid-column:1/2;
     width:6.6vw;
-    padding-top:2vw;
-    position:absolute;
-    left:3.5vw;
+    padding-top:1vw;
 }
 
 .bloc-tete /* ensemble "Trouvez votre hébergement..." jusqu'à "....logements disponibles"*/
@@ -129,7 +145,7 @@ nav img /* logo Reservia du menu */
 {
     height:2.75vw;
     width:4vw;
-    padding-top:1vw;
+    padding-top:0.8vw;
 }
 
 #bloc-filtres /* bloc contenant les 4 filtres */
@@ -141,37 +157,76 @@ nav img /* logo Reservia du menu */
     column-gap:1vw;
 }
 
-#f1,#f2,#f3,#f4 /* boîtes de chaque filtres */
+#f1,#f2,#f3,#f4 /* button de chaque filtres */
 {
-    border:3px solid #F2F2F2;
-    border-radius:400px;
+    width:max-content;
     height:2.75vw;
+    border-radius:100px;
+    border:3px solid #F2F2F2;
+    background-color:white;
+    padding:0vw;
+    box-sizing:unset;
 }
 
-#f1 img,#f2 img,#f3 img,#f4 img /* logos des filtres */
+.circle /* fond des icones des filtres */
 {
-    width:1.35vw;
-    height:1.35vw;
+    display:inline-block;
+    float:left;
+    width:2.75vw;
+    height:2.75vw;
     background-color:#DEEBFF;
+    padding:3px;/*padding et position, pour centrer correctement le cercle dans le button*/
+    position:relative;
+    bottom:3px;
+    right:3px;
     border-radius:50%;
-    padding:0.75vw;
 }
 
-#f1:hover,#f2:hover,#f3:hover,#f4:hover /* changer la couleur des boîtes filtres au survol */
+.icone-filtre-eco,.icone-filtre-fam,.icone-filtre-rom,.icone-filtre-ani /* icones des filtres */
+{
+    width:2.75vw;
+    height:2.75vw;
+    border-radius:50%;
+    background-size:50%;
+    background-repeat:no-repeat;
+    background-position-x:50%;
+    background-position-y:50%;
+}
+
+.icone-filtre-eco{background-image:url("icons/money-bill-wave-solid.svg");}
+.icone-filtre-fam{background-image:url("icons/child-solid.svg");}
+.icone-filtre-rom{background-image:url("icons/heart-solid.svg");}
+.icone-filtre-ani{background-image:url("icons/dog-solid.svg");}
+
+#f1:hover,#f2:hover,#f3:hover,#f4:hover /* changer la couleur des buttons filtres au survol */
 {
     background-color: #0065FC;
 }
 
-#f1 input[type="button"],#f2 input[type="button"],#f3 input[type="button"],#f4 input[type="button"] /* partie bouton des filtres */
+.label /* nom des filtres */
 {
-    border:none;
+    padding-left:3.5vw;
+    padding-right:1vw;
+    padding-top:0.75vw;
+    font-size:1vw;
+    font-weight:bolder;
+}
+
+#f1 button,#f2 button,#f3 button,#f4 button /* partie bouton des filtres */
+{
+    /*border:1px solid red;
     background-color:inherit; 
-    height:2.5vw;
     font-weight:bold;
     font-size:1vw;
-    position:relative;
-    bottom:1vw;
+    padding-left:0.5vw;
+    padding-right:1vw;
+    margin-top:1vw;
+    height:min-content;*/
+    /*position:relative;
+    height:2.5vw;
+    bottom:1.1vw;
     margin-right:1vw;
+    margin-left:0.5vw;*/
 }
 
 #disponible /* Résultat des logements disponibles */
@@ -202,14 +257,13 @@ nav img /* logo Reservia du menu */
 
 main /* activites et populaires */
 {
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
+    display:grid;
+    grid-template-columns: 65vw 32.5vw;
+    column-gap:2.5vw;
 }
 
 #hebergements, #populaires
 {
-    margin-top:1vw;
     display:inline-block;
     background-color:#F2F2F2;
     border-radius:20px;
@@ -218,9 +272,9 @@ main /* activites et populaires */
 
 #hebergements
 {
-    width:56.25vw;
+    grid-column:1/2;
+    grid-row:1/2;
     margin-left:3.5vw;
-    margin-right:1.25vw;
 }
 
 .bloc-titre /* bloc titres des 3 sections */
@@ -255,7 +309,6 @@ main /* activites et populaires */
 .vignette-hebergement
 {
     width:17.08vw;
-    /*height:13.82vw;*/
     background-color:white;
     border-radius:20px;
     box-shadow:0em 0em 1em lightgray;
@@ -321,6 +374,8 @@ article a /* vignettes cliquables */
 #populaires
 {
     margin-right:3.5vw;
+    grid-column:2/3;
+    grid-row:1/2;
 }
 
 .bloc-populaire
@@ -334,7 +389,6 @@ article a /* vignettes cliquables */
 .vignette-populaire
 {
     width:23.82vw;
-    /*height:8.5vw;*/
     background-color:white;
     border-radius:20px;
 }
@@ -343,7 +397,6 @@ article a /* vignettes cliquables */
 {
     width:8vw;
     height:8.4vw;
-    /*box-sizing:border-box;*/
     border-radius:20px 0px 0px 20px;
     padding:0.3vw;
     margin-right:1vw;
@@ -384,7 +437,6 @@ article a /* vignettes cliquables */
     display:flex;
     flex-direction:column;
     flex-wrap:wrap;
-    /*column-gap:3.125vw;*/
     height:33.72vw;
 }
 

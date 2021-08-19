@@ -1,7 +1,100 @@
-
-.bloc-activite
+nav a
 {
-    height:70vw;
+    font-size:1.6vw;
+}
+
+.bloc-tete /* ensemble "Trouvez votre hébergement..." jusqu'à "....logements disponibles"*/
+{
+    font-size: 1.6vw;
+}
+
+.bloc-tete h1 /* "Trouvez votre hébergement... */
+{
+    font-size: 2vw;
+}
+
+#local img /* logo géographique */
+{
+    width:1.36vw;
+    padding-top:1.6vw;
+    padding-bottom:1.6vw;
+    padding-left:2.08vw;
+    padding-right:2.08vw;
+}
+
+#local input[type="text"] /* champs de recherche */
+{
+    width:19.2vw;
+    height:4.8vw;
+    padding-left:1.6vw;
+}
+
+#search_large /* bouton recherche page normale*/
+{
+    font-size:1.6vw;
+    width:11.2vw;
+    height:5.12vw;
+}
+
+#bloc-filtres /* bloc contenant les 4 filtres */
+{
+    column-gap:1.6vw;
+}
+
+#titre-filtre /* inscription "filtres" devant les filtres */
+{
+    height:4.4vw;
+    width:6.4vw;
+    padding-top:1.6vw;
+}
+
+#f1,#f2,#f3,#f4 /* button de chaque filtres */
+{
+    height:4.4vw;
+}
+
+.circle /* fond des icones des filtres */
+{
+    width:4.4vw;
+    height:4.4vw;
+}
+
+.icone-filtre-eco,.icone-filtre-fam,.icone-filtre-rom,.icone-filtre-ani /* icones des filtres */
+{
+    width:4.4vw;
+    height:4.4vw;
+}
+
+.label /* nom des filtres */
+{
+    padding-left:5.6vw;
+    padding-right:1.6vw;
+    padding-top:1.2vw;
+    font-size: 1.6vw;
+}
+
+#disponible /* Résultat des logements disponibles */
+{
+    margin-top:3.2vw;
+    height:3.2vw;
+    margin-bottom:1.6vw;
+    font-size:1.6vw;
+}
+
+#disponible img /* logo "i" */
+{
+    padding:0.4vw;
+    width:1.2vw;
+    height:1.2vw;
+    margin-right:0.8vw;
+    bottom:0.4vw;
+}
+
+main /* activites et populaires */
+{
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 0.33fr;
+    row-gap:1vw;
 }
 
 #hebergements,#populaires
@@ -13,14 +106,31 @@
     border-radius:0px;
 }
 
+#hebergements
+{
+    grid-row:1/2;
+}
+
 .bloc-hebergement,.bloc-populaire
 {
     justify-content:space-evenly;
 }
 
-.bloc-populaire
+.bloc-titre /* bloc titres des 3 sections */
 {
-    flex-direction:row;column-gap:1vw;
+    height:5.6vw;
+}
+
+.titre /* Hébergement à, Les plus populaires, Activités à*/
+{
+    font-size:1.92vw;
+    height:2.88vw;
+}
+
+.titre-icone /* graph sur "les plus populaires" */
+{
+    width:2.24vw;
+    margin-right:1.44vw;
 }
 
 .vignette-hebergement
@@ -30,14 +140,20 @@
     font-size:1.5vw;
 }
 
-.description, .tarif
+.image-vignette-hebergement
+{
+    width:25vw;
+    height:12vw;
+}
+
+.description, .tarif /* noms des lieux d'hébergements ou d'activités + tarifs */
 {
     font-size:1.6vw;
     height: 2vw;
     margin-top:0.3vw;
 }
 
-[class^="note"]
+[class^="note"] /* boite des notations par étoiles */
 {
     width:10vw;
     height:01.4vw;
@@ -45,10 +161,20 @@
     background-position-x: 1vw,2.5vw,4vw,5.5vw,7vw;
 }
 
-.image-vignette-hebergement
+#afficher /* "afficher plus" */
 {
-    width:25vw;
-    height:12vw;
+    font-size:1.6vw;
+}
+
+#populaires
+{
+    grid-row:2/3;
+    grid-column:1/2;
+}
+
+.bloc-populaire
+{
+    flex-direction:row;column-gap:1vw;
 }
 
 .vignette-populaire
@@ -63,7 +189,7 @@
     height:11.3vw;
 }
 
-.vignette-populaire [class^="note"]
+.vignette-populaire [class^="note"] /* déclage de la note vers la droite et bas dans vignette populaire*/
 {
     margin-left:11.5vw;
 }
@@ -73,15 +199,9 @@
     height:5.5vw;
 }
 
-.bloc-titre
+.bloc-activite
 {
-    height:5.6vw;
-}
-
-.titre
-{
-    font-size:1.92vw;
-    height:2.88vw;
+    height:70vw;
 }
 
 .vignette-activite
@@ -89,119 +209,25 @@
     width:45vw;
 }
 
-nav a
-{
-    width:14.4vw;
-    font-size:1.6vw;
-}
-
-.bloc-tete
-{
-    font-size: 1.6vw;
-}
-
-.bloc-tete h1
-{
-    font-size: 2vw;
-}
-
-#afficher
-{
-    font-size:1.6vw;
-}
-
-.titre-icone
-{
-    width:2.24vw;
-    margin-right:1.44vw;
-}
-
-#disponible
-{
-    margin-top:3.2vw;
-    height:3.2vw;
-    margin-bottom:1.6vw;
-    font-size:1.6vw;
-}
-
-#disponible img
-{
-    padding:0.4vw;
-    width:1.2vw;
-    height:1.2vw;
-    margin-right:0.8vw;
-    bottom:0.4vw;
-}
-
-#titre-filtre /* inscription "filtres" devant les filtres */
-{
-    height:4.4vw;
-    width:6.4vw;
-    padding-top:1.6vw;
-}
-
-#f1,#f2,#f3,#f4
-{
-    height:4.4vw;
-}
-
-#f1 img,#f2 img,#f3 img,#f4 img
-{
-    width:2.16vw;
-    height:2.16vw;
-    padding:1.2vw;
-}
-
-#f1 input[type="button"],#f2 input[type="button"],#f3 input[type="button"],#f4 input[type="button"]
-{
-    height:4vw;
-    font-size:1.6vw;
-    bottom:1.6vw;
-    margin-right:1.6vw;
-}
-
-#local img
-{
-    width:1.36vw;
-    padding-top:1.6vw;
-    padding-bottom:1.6vw;
-    padding-left:2.08vw;
-    padding-right:2.08vw;
-}
-
-#local input[type="text"]
-{
-    width:19.2vw;
-    height:4.8vw;
-    padding-left:1.6vw;
-}
-
-#search_large
-{
-    font-size:1.6vw;
-    width:11.2vw;
-    height:5.12vw;
-}
-
 footer
 {
     padding:3.2vw;
 }
 
-.foot_colonne
+.foot_colonne /* les 3 colonnes dans le pied de page */
 {
     width:20vw;
     margin-right:10vw;
 }
 
-footer a
-{
-    margin-bottom:1.28vw;
-    font-size:1.6vw;
-}
-
-footer h3
+footer h3 /* titres des 3 colonnes du pied de page */
 {
     font-size:1.6vw;
     margin-bottom:2.08vw;
+}
+
+footer a /* liens dans le pied de page */
+{
+    margin-bottom:1.28vw;
+    font-size:1.6vw;
 }

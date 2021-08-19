@@ -1,38 +1,35 @@
-nav
+nav /* menu de navigation "hébergements, activités, inscription" + logo site */
 {
-    max-width:none;
-    width:100vw;
-    height:24vw;
-    margin-left:0vw;
-    margin-bottom:6vw;
-    justify-content:space-evenly;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8vw 8vw;
+    margin:0vw;
+    row-gap:5vw;;
 }
 
-nav img
+nav img /* logo Reservia du menu */
 {
-    flex-grow:3.75;
-    left:4.5vw;
     width:19.8vw;
-    padding-top:2vw;
-    position:absolute;
+    padding-left:2vw;
+    grid-row:1/2;
 }
 
 nav a
 {
     font-size:3.5vw;
-    width:25vw;
 }
 
 nav a:nth-child(4) /* inscription */
 {
-    order:2;
-    margin-left:60vw;
-    text-align:right;
+    grid-column:2/3;
+    grid-row:1/2;
+    width:min-content;
+    padding-left:28vw;
 }
 
 nav a:nth-child(2) /* hébergements */
 {
-    order:3;
+    grid-column:1/2;
+    grid-row:2/3;
     border-bottom:3px solid #F2F2F2;
     border-top:transparent;
     flex-grow:3.75;
@@ -40,7 +37,8 @@ nav a:nth-child(2) /* hébergements */
 
 nav a:nth-child(3) /* activites */
 {
-    order:4;
+    grid-column:2/3;
+    grid-row:2/3;
     border-bottom:3px solid #F2F2F2;
     border-top:transparent;
     flex-grow:3.75;
@@ -99,39 +97,43 @@ nav a:nth-child(4n+1):hover
 
 #bloc-filtres /* bloc contenant les 4 filtres */
 {
-    width:70vw;
-    row-gap:3vw;
     column-gap:3vw;
+    width:70vw;
 }
 
 #titre-filtre /* inscription "filtres" devant les filtres */
 {
-    height:3vw;
+    height:8.25vw;
     width:12vw;
-    padding-top:3vw;
-    font-size:3vw;
+    padding-top:2.4vw;
     margin-right:50vw;
 }
 
-#f1,#f2,#f3,#f4 /* boîtes de chaque filtres */
+#f1,#f2,#f3,#f4 /* button de chaque filtres */
 {
     height:8.25vw;
 }
 
-#f1 img,#f2 img,#f3 img,#f4 img /* logos des filtres */
+.circle /* fond des icones des filtres */
 {
-    width:4.05vw;
-    height:4.05vw;
-    padding:2.25vw;
+    width:8.25vw;
+    height:8.25vw;
 }
 
-#f1 input[type="button"],#f2 input[type="button"],#f3 input[type="button"],#f4 input[type="button"] /* partie bouton des filtres */
+.icone-filtre-eco,.icone-filtre-fam,.icone-filtre-rom,.icone-filtre-ani /* icones des filtres */
 {
-    height:7.5vw;
-    font-size:3vw;
-    bottom:3vw;
-    margin-right:3vw;
+    width:8.25vw;
+    height:8.25vw;
 }
+
+.label /* nom des filtres */
+{
+    padding-left:12.25vw;
+    padding-right:3vw;
+    padding-top:2.25vw;
+    font-size: 3vw;
+}
+
 
 #disponible /* Résultat des logements disponibles */
 {
@@ -152,17 +154,31 @@ nav a:nth-child(4n+1):hover
 
 main
 {
-    flex-direction:column;
+    grid-template-columns:97.75vw;
+    grid-template-rows:auto auto;
+    row-gap:1vw;
+}
+
+#hebergements /*boîte hebergement passe après la boîte populaire*/
+{
+    background-color:white;
+    grid-row:2/3;
+}
+
+#populaires
+{
+    grid-row:1/2;
+    grid-column:1/2;
 }
 
 .bloc-hebergement,.bloc-populaire
 {
-    row-gap:1vw;flex-direction:column;
+    row-gap:3vw;flex-direction:column;width:min-content;
 }
 
 .bloc-activite
 {
-    height:auto;
+    height:auto;width:min-content;
 }
 
 .bloc-titre /* bloc titres des 3 sections */
@@ -184,13 +200,13 @@ main
 
 .vignette-hebergement
 {
-    width:95vw;
+    width:91vw;
 }
 
 .image-vignette-hebergement
 {
-    width:93vw;
-    height:45vw;
+    width:89vw;
+    height:35vw;
     padding:1vw;
 }
 
@@ -217,7 +233,7 @@ main
 
 .vignette-populaire
 {
-    width:95vw;
+    width:91vw;
     height:35vw;
 }
 
@@ -247,8 +263,7 @@ main
 
 #activites
 {
-    margin-left:1.5vw;
-    padding:0vw;
+    margin-top:0vw;
 }
 
 .vignette-activite
@@ -258,34 +273,35 @@ main
 
 .vignette-activite img
 {
-    width:95vw;
+    width:91vw;
     height:calc(100% - 12vw);
 }
 
 .vignette-activite:nth-child(1n+1)
 {
     height:45vw;
-    width:95vw;
+    width:91vw;
 }
 
 #hebergements,#populaires,#activites
 {
-    width:100vw;
     margin-left:0vw;
-    padding:1.5vw;
+    margin-right:0vw;
+    padding:3.5vw;
     border-radius:0px;
 }
 
 footer
 {
-    width:100vw;
-    margin-top:2vw;
+    width:92vw;
+    padding-right:3.5vw;
+    margin:0vw;
 }
 
 .foot_colonne /* les 3 colonnes dans le pied de page */
 {
     display:block;
-    width:100vw;
+    width:max-content;
 }
 
 footer h3 /* titres des 3 colonnes du pied de page */
@@ -301,10 +317,4 @@ footer a
     font-size:3vw;
     padding-left:3.5vw;
     padding-top:1.5vw;
-}
-
-#hebergements /*boîte hebergement passe après la boîte populaire*/
-{
-    order:2;
-    background-color:white;
 }
