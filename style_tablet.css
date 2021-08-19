@@ -199,6 +199,12 @@ main /* activites et populaires */
     height:5.5vw;
 }
 
+#activites
+{
+    grid-row:3/4;
+    grid-column:1/2;
+}
+
 .bloc-activite
 {
     height:70vw;
