@@ -88,7 +88,8 @@ nav img /* logo Reservia du menu */
 #local /* bloc barre de recherche */
 {
     display:flex;
-    margin-bottom:2vw
+    margin-top:2vw;
+    margin-bottom:2vw;
 }
 
 #local img /* logo géographique */
@@ -184,6 +185,7 @@ nav img /* logo Reservia du menu */
 
 .icone-filtre-eco,.icone-filtre-fam,.icone-filtre-rom,.icone-filtre-ani /* icones des filtres */
 {
+    display:block;
     width:2.75vw;
     height:2.75vw;
     border-radius:50%;
@@ -205,6 +207,7 @@ nav img /* logo Reservia du menu */
 
 .label /* nom des filtres */
 {
+    display:block;
     padding-left:3.5vw;
     padding-right:1vw;
     padding-top:0.75vw;
@@ -337,6 +340,7 @@ article a /* vignettes cliquables */
 .description /* noms des lieux d'hébergements ou d'activités */
 {
     font-weight:bolder;
+    margin:0vw; /* réinitialisation pour annuler les marges originales du h3 */
 }
 
 .description,.tarif /* tarifs */
