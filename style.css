@@ -215,23 +215,6 @@ nav img /* logo Reservia du menu */
     font-weight:bolder;
 }
 
-#f1 button,#f2 button,#f3 button,#f4 button /* partie bouton des filtres */
-{
-    /*border:1px solid red;
-    background-color:inherit; 
-    font-weight:bold;
-    font-size:1vw;
-    padding-left:0.5vw;
-    padding-right:1vw;
-    margin-top:1vw;
-    height:min-content;*/
-    /*position:relative;
-    height:2.5vw;
-    bottom:1.1vw;
-    margin-right:1vw;
-    margin-left:0.5vw;*/
-}
-
 #disponible /* Résultat des logements disponibles */
 {
     margin-top:2vw;
